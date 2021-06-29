@@ -75,3 +75,81 @@ header .sign-in a:hover {
     background-position: center;
     cursor: pointer;
 }
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    padding: 100px;
+    padding-top: 180px;
+}
+
+.main > * {
+    margin-bottom: 20px;
+}
+
+.google-mic {
+    background:url("Images/google-mic.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+
+.google-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    max-height: 100%;
+    padding: 10px;
+    border: 1px solid rgb(228, 225, 225);
+    border-radius: 25px;
+}
+
+.google-search:hover {
+    box-shadow: 0px 2px 9px 1px rgb(228, 225, 225);
+}
+
+.google-search > * {
+    margin-left: 10px; 
+}
+
+.google-search input {
+    height: 30px;
+    width: 100%;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+
+.google-search i {
+    color: rgb(165, 162, 162);
+}
+
+.search-bttns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(87, 84, 84);
+    background:rgb(243, 241, 241);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn:hover {
+    border: 1px solid lightgray;
+    margin: 4px;
+}
