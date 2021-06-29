@@ -1,6 +1,77 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,100;0,300;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 15px;
+    font-size: 13px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(63, 61, 61);
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header .sign-in a:hover {
+    text-decoration: none;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left-nav > * {
+    margin-left: 20px;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-nav > * {
+    margin-right: 20px;
+}
+
+.sign-in a {
+    background-color: #4285f4;
+    color: white;
+    padding: 7.5px 12.5px;
+    font-weight: 600;
+    border: 1px solid #4285f4;
+    border-radius: 2.5px;
+}
+
+.google-apps {
+    height: 25px;
+    width: 28px;
+    background:url("Images/google-apps-passive.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.google-apps:hover {
+    height: 25px;
+    width: 28px;
+    background:url("Images/google-apps-active.png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
 }
