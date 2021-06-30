@@ -6,6 +6,12 @@
     font-family: "Roboto", sans-serif; 
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -82,9 +88,8 @@ header .sign-in a:hover {
     align-items: center;
     flex-direction: column;
     max-width: 100%;
-    height: auto;
+    max-height: 100%;
     padding: 100px;
-    padding-top: 180px;
 }
 
 .main > * {
@@ -95,16 +100,16 @@ header .sign-in a:hover {
     background:url("Images/google-mic.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 
 .google-search {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    max-height: 100%;
+    width: 43%;
+    height: auto;
     padding: 10px;
     border: 1px solid rgb(228, 225, 225);
     border-radius: 25px;
@@ -134,7 +139,7 @@ header .sign-in a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin-top: 20px;
 }
@@ -153,3 +158,45 @@ header .sign-in a:hover {
     border: 1px solid lightgray;
     margin: 4px;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    background-color: #f2f2f2;
+    padding: 12px;
+    font-size: 14px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.left-footer {
+    display: flex;
+}
+
+.right-footer {
+    display: flex;
+}
+
+.left-footer > *{
+    text-align: center;
+    margin-right: 12px;
+    margin-left: 15px;
+}
+
+.left-footer a {
+    text-decoration: none;
+    color: rgb(87, 84, 84);
+}
+
+.right-footer > *{
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 12px;
+}
+
+.right-footer a {
+    text-decoration: none;
+    color: rgb(87, 84, 84);
+}
+
